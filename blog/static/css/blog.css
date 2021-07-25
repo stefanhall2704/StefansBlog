@@ -68,3 +68,9 @@ h4 {
     color: #FFFFFF;
     background-color: #C25100;
 }
+.btn btn-default {
+    width: 15px;
+    height: 5px;
+    background-color: #C25100;
+
+}
