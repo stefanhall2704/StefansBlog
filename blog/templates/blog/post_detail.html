@@ -3,11 +3,9 @@
 {% block content %}
     <article class="post">
         <aside class="actions">
-            {% if user.is_authenticated %}
             <a href="{% url 'post_new' %}" class="top-menu">
             {% include './icons/pencil-fill.svg' %}
             </a>
-        {% endif %}
         </aside>
         {% if post.published_date %}
             <time class="date">
