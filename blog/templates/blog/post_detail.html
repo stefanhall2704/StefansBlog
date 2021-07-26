@@ -4,9 +4,11 @@
     <article class="post">
         <aside class="actions">
         {% if user.is_authenticated %}
+
             <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
                {% include './icons/pencil-fill.svg' %}Edit
             </a>
+
        {% endif %}
         </aside>
         {% if post.published_date %}

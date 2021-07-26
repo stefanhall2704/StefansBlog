@@ -66,10 +66,12 @@ h4 {
 
 .btn-default:hover {
     color: #FFFFFF;
-    background-color: #C25100;
+    background-color:#09b8be;
 }
-.btn btn-default {
-    width: 15px;
-    height: 5px;
+#new_post_button {
+    margin-left: 1600px;
+}
+#new_post_button:hover {
+    color: #FFFFFF;
     background-color: #C25100;
 }
