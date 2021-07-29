@@ -8,6 +8,7 @@
             </time>
             <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
+            <p><strong>Author: </strong> {{ post.author }}</p>
         </article>
     {% endfor %}
 {% endblock %}

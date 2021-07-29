@@ -1,9 +1,9 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <h2>Edit Post</h2>
+    <h2>New Post</h2>
     <br>
-    <h3 style="border: 2px solid #000; margin-right: 53%;">Changed your mind? Well let's see what is on it!</h3>
+    <h3 style="border: 2px solid #000; margin-right: 70%;">Let's see what is on your mind!</h3>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
         <button type="submit" class="save btn btn-default">Save</button>
