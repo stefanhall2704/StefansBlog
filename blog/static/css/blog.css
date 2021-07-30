@@ -68,9 +68,7 @@ h4 {
     color: #FFFFFF;
     background-color:#09b8be;
 }
-#new_post_button {
-    margin-left: 1600px;
-}
+
 #new_post_button:hover {
     color: #FFFFFF;
     background-color: #09b8be;

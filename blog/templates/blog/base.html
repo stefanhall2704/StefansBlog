@@ -5,17 +5,18 @@
         <title>Stefan's Blog Site</title>
         <div id ="top_button"> 
             <aside class="actions">
+                <h3> 
+                    My portfolio online
+                </h3>
+                <button type="button" class="btn-default">
+                <a href="https://stefhall2704.pythonanywhere.com/admin/login/?next=/admin/"  style="text-decoration:none;">Login</a>
+                </button>
                 {% if user.is_authenticated %}
-                    <a id="new_post_button" class="btn btn-default" href="{% url 'post_new' %}">New Post</a>
+
+                    <a id="new_post_button" class="btn btn-default" href="{% url 'post_new' %}" style="margin-left: 5px; margin-bottom: 5px; ">New Post</a>
                     
                 {% endif %}
             </aside>
-
-        </div>
-        <div> 
-            <h3> 
-                My portfolio online
-            </h3>
         </div>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -30,8 +31,9 @@
                 <h1><a href="/">Stefan's New Blog Site</a></h1>
             </div>
         </header>
+    <div>  
         <main class="content container">
-            <div class="row">
+            <div class="row" >
                 <div class="col">
                     {% block content %}
                     {% endblock %}
