@@ -20,6 +20,6 @@
         {% endif %}
         <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
-        <p><strong>Author: </strong>{{ post.author }}</p>
+        <p><strong>Author: </strong>{{ post.current.author }}</p>
     </article>
 {% endblock %}
