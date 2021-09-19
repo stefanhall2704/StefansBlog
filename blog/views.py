@@ -4,7 +4,6 @@ from .models import Post
 from django.shortcuts import render, get_object_or_404
 from .forms import PostForm
 from django.shortcuts import redirect
-from django.contrib.auth import authenticate, login
 
 
 
@@ -42,18 +41,3 @@ def post_edit(request, pk):
     else:
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form})
-
-# def login_view(request):
-#     username = {'username'}
-#     password = {'password'}
-#     user = authenticate(username, password)
-#     if user is not None:
-#         login(request, user)
-#         if login is not None:   
-#             return redirect('base', pk=post.pk)
-#         else:
-#             return user is not authenticate
-#     else:
-#         return NameError
-
-
